@@ -18,5 +18,11 @@ for c in range(0, 5):
          lower = values[c]
          pos_lower = c
 print(values)
-print(f'the higher value its  {higher} and its at the position {pos_higher}')
-print(f'the lower value its {lower} and its at the position {pos_lower}')
+print(f'the higher value its  {higher} and its at the position', end='' )
+for i, v in enumerate(values):
+     if v == higher:
+          print(f'{i}...', end='')
+print(f'\nthe lower value its {lower} and its at the position ', end='')
+for i, v in enumerate(values):
+     if v == lower:
+          print(f'{i}...', end='')
